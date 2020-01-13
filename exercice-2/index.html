@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moteur De Recherche Pokemon</title>
+</head>
+<meta charset="utf-8">
+<body>
+  <div id='search'></div>    
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="lib/search.js"></script>
+  <script>
+    // Run the Plugin
+    $(document).ready(function() {
+      var mySearch = $('#search').MySearch({
+    
+        pokemon : [{
+          
+          'name': 'ténéfix',
+          'img': 'https://www.pokepedia.fr/images/6/60/T%C3%A9n%C3%A9fix-RS.png'
+        },{
+          
+          'name': 'fantominus',
+          'img': 'https://www.pokepedia.fr/images/9/9f/Fantominus-RFVF.png'
+        },{
+            'name': 'absol',
+            'img': 'https://www.pokepedia.fr/images/1/10/Absol-RS.png'
+        
+        }]
+         
+        
+      });
+    });
+  </script>
+</body>
+</html>
